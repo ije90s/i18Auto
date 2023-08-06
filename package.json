@@ -1,0 +1,25 @@
+{
+  "name": "i18auto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scan": "i18next-scanner --config i18next-scanner.config.js",
+    "upload": "npm run scan && node translate/upload.js",
+    "download": "node translate/download.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "google-auth-library": "^8.9.0",
+    "i18next": "^23.4.1",
+    "mkdirp-classic": "^0.5.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "google-spreadsheet": "^4.0.2",
+    "i18next-scanner": "^4.3.0"
+  }
+}

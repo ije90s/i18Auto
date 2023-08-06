@@ -1,0 +1,4 @@
+/node_modules
+/assets/locales/
+/translate/.credentials
+package-lock.json
