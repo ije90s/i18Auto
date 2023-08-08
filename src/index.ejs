@@ -1,10 +1,14 @@
 <html>
   <head></head>
   <body>
+    <% var count = 1; var value = '명'; var value2 = '개'; %><br />
     i18next.t("테스트")<br />
     i18next.t("안녕하세요")<br />
     i18next.t("롤로로")<br />
     i18next.t("다국어 테스트입니다")<br />
-    i18next.t("ejs테스트")
+    i18next.t("ejs테스트")<br />
+    <%=i18next.t("사람수", {value: value, count: count})%> <%=i18next.t("개수",
+    {value: value2, count: count})%> <%=i18next.t("총 {{ count }}개")%>
+    <%=i18next.t("총 %{count}명")%>
   </body>
 </html>
